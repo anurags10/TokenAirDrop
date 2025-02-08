@@ -1,66 +1,23 @@
-## Foundry
+# TokenAirDrop - Bagel Token Airdrop
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
+TokenAirDrop is a Foundry-based project that enables users to claim **Bagel** tokens through a Merkle tree-based airdrop mechanism. The unique feature of this project allows users to claim tokens on behalf of others, ensuring efficient and secure token distribution.
 
-Foundry consists of:
+## Features
+- **Merkle Tree Integration**: Uses a Merkle tree to verify eligible addresses for airdrop claims.
+- **Claim on Behalf**: Users can claim tokens not only for themselves but also for others.
+- **Secure and Efficient**: Merkle proof verification ensures only whitelisted addresses receive tokens.
+- **Built with Foundry**: Utilizes Foundry for smart contract development and testing.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Prerequisites
+Ensure you have the following installed:
+- [Foundry](https://getfoundry.sh/) (for compiling, deploying, and testing contracts)
+- Node.js and npm/yarn (for scripting and interaction)
+- Metamask or any other Ethereum-compatible wallet
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Installation
+Clone the repository and install dependencies:
+```sh
+git clone https://github.com/your-username/TokenAirDrop.git
+cd TokenAirDrop
+forge install
